@@ -8,9 +8,7 @@ Start InfluxDB
 ``` bash
 influxd
 ```
-Run on
-## License
-[http://localhost:8086/](http://localhost:8086/)
+Run on [http://localhost:8086/](http://localhost:8086/)
 
 --------------------------------
 
