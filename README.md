@@ -1,6 +1,20 @@
 # Smart Valvle Thermostat
 
-## Sensor configuration with influxdb
+## Install Influx
+``` bash
+brew install influxdb
+```
+Start InfluxDB
+``` bash
+influxd
+```
+Run on
+## License
+[http://localhost:8086/](http://localhost:8086/)
+
+--------------------------------
+
+## Configuration with influxdb
 ``` ino
 // WiFi AP SSID
 #define WIFI_SSID "<YOUR SSID>"
@@ -16,3 +30,20 @@
 // InfluxDB v2 bucket name (Use: InfluxDB UI ->  Data -> Buckets)
 #define INFLUXDB_BUCKET "<YOUR BUCKET>"
 ```
+
+## Configuration Sensor DHT22
+``` ino
+#define DHTPIN <CHANGE PIN>
+```
+
+## Configuration Sensor STEPPER MOTOR
+``` ino
+Stepper stepper(STEPS, <CHANGE PIN>, <CHANGE PIN>, <CHANGE PIN>, <CHANGE PIN>);
+```
+
+## Configuration Sensor
+![Screenshot](shema.png)
+
+
+
+
